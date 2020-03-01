@@ -1,0 +1,12 @@
+//Chaining stream insertion operator
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"My"
+        <<" country"  
+        <<" is"
+        <<" beautiful" 
+        <<endl;
+    return 0;
+}

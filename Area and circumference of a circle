@@ -1,0 +1,17 @@
+// Area,circumference of cirle
+#include <iostream>
+using namespace std;
+int main()
+{
+    const float PI=3.14159;
+    float radius;
+    double area;
+    double circumference;
+    cout<<"Enter radius in meter: ";
+    cin>>radius;
+    area=PI*radius*radius;
+    circumference=2*PI*radius;
+    cout<<"The Area of circle of given radius is: "<<area<<" meter square"<<endl;
+    cout<<"The Circumference of circle of given radius is: "<<circumference<<" meter"<<endl;
+    return 0;
+}

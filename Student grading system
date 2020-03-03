@@ -1,0 +1,23 @@
+// Student Grading system
+#include <iostream>
+using namespace std;
+int main()
+{
+    const int MM=100;
+    float marks;
+    float percentage;
+    cout<<"Enter your marks: ";
+    cin>>marks;
+    if(marks<0 or marks>100) cout<<"Invalid entry";
+    else
+    {
+        percentage=(marks/MM)*100;
+        if(percentage>=80) cout<<"A+ Grade"<<endl;
+        else if(percentage<80 && percentage>=70) cout<<"A Grade"<<endl;
+        else if(percentage<70 && percentage>=60) cout<<"B Grade"<<endl;
+        else if(percentage<60 && percentage>=50) cout<<"C Grade"<<endl;
+        else if(percentage<50 && percentage>=40) cout<<"D Grade"<<endl;
+        else cout<<"Fail"<<endl;
+    }
+    return 0;
+}

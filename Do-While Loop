@@ -1,0 +1,22 @@
+//Program to calculate Average temperature wile user enters multiple temperatures
+#include <iostream>
+using namespace std;
+int main()
+{
+	float centigrade,fahrenheit;
+	float sum=0.0, average;
+	int count=0;
+
+	do {
+		cout << "Enter Temperature in Centigrade: ", cin >> centigrade;
+		sum += centigrade;
+		count += 1;
+
+	} while (centigrade != 0.0);
+	average = sum / (count-1);
+	fahrenheit = (average * 180 / 100) + 32;
+	cout << "The Average of given Temperatures is: " << average << "^C and "<<fahrenheit<<"^F";
+	
+	return 0;
+
+}

@@ -1,0 +1,24 @@
+//Program to print the alphabets till the end starting from user entry
+#include <iostream>
+using namespace std;
+int main()
+{
+	char ch;
+	int loop_count;
+	cout << "Enter any alphabet: ", cin >> ch;
+	int num = ch;
+	if (num >= 65 && num <= 90) loop_count = 90 - num + 1;
+	else if (num >= 97 && num <= 122) loop_count = 122 - num + 1;
+	else {
+		cout << "Invalid Entry\n";
+		return 1;
+	}
+	for (int i = 0; i < loop_count; i++)
+	{
+		cout << char(num)<<" ";
+		num++;
+
+	}
+	return 0;
+
+}
